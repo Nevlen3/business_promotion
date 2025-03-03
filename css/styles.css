@@ -102,8 +102,7 @@ button {
     text-align: center;
     color: #173a56;
     background-color: transparent;
-    padding: 10px;
-}
+} 
 
 .header-btn:hover,
 .header-btn:focus {
@@ -166,4 +165,28 @@ button {
     text-decoration-skip-ink: none;
     color: #02897a;
     background-color: transparent;
+}
+.products {
+
+}
+
+.products-title {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: #22343d;
+}
+.products-list {
+    display: flex;
+    gap: 21px;
+}
+.products-btn {
+    border-radius: 4px;
+    min-width: 178px;
+    height: 53px;
+    border: none;
+    font-family: inherit;
+    font-weight: 700;
+    color: #fff;
+    background-color: #02897a;
 }
