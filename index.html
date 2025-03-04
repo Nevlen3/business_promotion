@@ -4,37 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business promotion</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500&family=Inter:opsz,wght@500;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="./index.html">
-        <img src="./images/logo.svg" alt="logo" width="40" height="36" />
-        Product
-      </a>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Product</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./customers.html">Customers</a></li>
-          <li><a href="">Resources</a></li>
+    <!-- #region HEADER <!--! Header -->
+    <header class="header">
+      <div class="header-container container">
+        <a href="./index.html" class="logo">
+          <img src="./images/logo.svg" alt="logo" width="40" height="36" />
+          Product
+        </a>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a href="./index.html" class="header-nav-link current">Product</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./pricing.html" class="header-nav-link">Pricing</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./customers.html" class="header-nav-link">Customers</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./resources-test.html" class="header-nav-link"
+                >Resources</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-btn-list">
+          <li class="header-btn">
+            <button type="button" class="header-btn-link">Sign In</button>
+          </li>
+          <li class="header-btn">
+            <button type="button" class="header-btn-link">Sign Up</button>
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li><button type="button">Sign In</button></li>
-        <li><button type="button">Sign Up</button></li>
-      </ul>
+      </div>
     </header>
+    <!-- #endregion HEADER <!--? Header -->
+    <!-- * #exemple -->
+    <!-- TODO: #exemple -->
     <main>
-      <section class="hero">
-        <h1>Work at the speed of thought</h1>
-        <p>
-          Tools, tutorials, design and innovation experts, all in one place! The
-          most intuitive way to imagine your next user experience.
-        </p>
-        <ul>
-          <li><button type="button">Get started</button></li>
-          <li><button type="button">Watch the Video</button></li>
-        </ul>
+      <!-- #region Hero <!--! Hero -->
+      <section class="hero container">
+        <div class="hero-info">
+          <h1 class="hero-title">Work at the speed of thought</h1>
+          <p class="hero-text">
+            Tools, tutorials, design and innovation experts, all in one place!
+            The most intuitive way to imagine your next user experience.
+          </p>
+
+          <ul class="hero-btn-list">
+            <li>
+              <button type="button" class="hero-btn-1">Get started</button>
+            </li>
+            <li>
+              <button type="button" class="hero-btn-2">Watch the Video</button>
+            </li>
+          </ul>
+        </div>
         <img
           src="./images/hero-img.svg"
           alt="hero image"
@@ -42,9 +84,11 @@
           height="555"
         />
       </section>
-      <section class="products">
+      <!-- #endregion Hero -->
+      <!-- #region Products <!--! Products-->
+      <section class="products container">
         <h2>Product was Built Specifically for You</h2>
-        <ul>
+        <ul class="products-list">
           <li>
             <img
               src="./images/icon-1.svg"
@@ -86,9 +130,244 @@
             <p>Personal choices and the overall personality of the person.</p>
           </li>
         </ul>
-        <button type="button">SIGN UP NOW</button>
+        <button type="button" class="products-btn">SIGN UP NOW</button>
       </section>
+      <!-- #endregion Products -->
+      <!-- #region Management <!--! Management -->
+      <section class="management container">
+        <div class="products-text">
+          <p>Effortless Validation for</p>
+          <h2>Management</h2>
+          <p>
+            The Myspace page defines the individual, his or her characteristics,
+            traits, personal choices and the overall personality of the person.
+          </p>
+          <ul>
+            <li>
+              <h3>Accessory makers</h3>
+              <p>
+                While most people enjoy casino gambling, sports betting, lottery
+                and bingo playing for the fun
+              </p>
+            </li>
+            <li>
+              <h3>Alterationists</h3>
+              <p>
+                If you are looking for a new way to promote your business that
+                won’t cost you more money,
+              </p>
+            </li>
+          </ul>
+        </div>
+        <img
+          src="./images/management.svg"
+          alt="management"
+          width="540"
+          height="500"
+        />
+      </section>
+      <!-- #endregion Management <!--? Management -->
+      <!-- #region Support <!--! Support -->
+      <section class="support container">
+        <img
+          src="./images/support-img.svg"
+          alt="management"
+          width="540"
+          height="500"
+        />
+        <div class="support-text">
+          <p>Easier decision making for</p>
+          <h2>Customer Support</h2>
+          <p>
+            The Myspace page defines the individual, his or her characteristics,
+            traits, personal choices and the overall personality of the person.
+          </p>
+          <ul>
+            <li>
+              <img src="./images/ok-1-orange.svg" alt="img-support" />
+              <p>Never worry about overpaying for your energy again.</p>
+            </li>
+            <li>
+              <img src="./images/ok-2-red.svg" alt="img-support" />
+              <p>
+                We will only switch you to energy companies that we trust and
+                will treat you right
+              </p>
+            </li>
+            <li>
+              <img src="./images/ok-3-blue.svg" alt="img-support" />
+              <p>We track the markets daily and know where the savings are.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- #endregion Support <!--? Support -->
+      <!-- #region Collaborative <!--! Collaborative -->
+      <section class="collaborative container">
+        <div class="collaborative-text">
+          <p>Optimisation for</p>
+          <h2>Collaborative</h2>
+          <p>
+            Few would argue that, despite the advancements of feminism over the
+            past three decades, women still face a double standard when it comes
+            to their behavior.
+          </p>
+          <ul>
+            <li>
+              <h3>Accessory makers</h3>
+              <p>
+                While most people enjoy casino gambling, sports betting, lottery
+                and bingo playing for the fun
+              </p>
+            </li>
+            <li>
+              <h3>Alterationists</h3>
+              <p>
+                If you are looking for a new way to promote your business that
+                won’t cost you more money,
+              </p>
+            </li>
+          </ul>
+        </div>
+        <img
+          src="./images/collaboration-img.svg"
+          alt="management"
+          width="540"
+          height="500"
+        />
+      </section>
+      <!-- #endregion Collaborative <!--? Collaborative -->
+      <!-- #region Staff <!--! Staff -->
+      <section class="staff container">
+        <h2>Quick & Easy Process</h2>
+        <p>
+          Do you require some help for your project: Conception workshop,
+          prototyping, marketing strategy, landing page, Ux/UI?
+        </p>
+        <ul>
+          <li>
+            <img src="./images/avatar.svg" alt="avatar-1" />I can take care of
+            your pitch
+          </li>
+          <li>
+            <img src="./images/avatar-1.svg" alt="avatar-1" />I can prototype
+            your app
+          </li>
+          <li>
+            <img src="./images/avatar-2.svg" alt="avatar-1" />I can take care of
+            your pitch
+          </li>
+          <li>
+            <img src="./images/avatar-3.svg" alt="avatar-1" />I can help
+            marketing strategy
+          </li>
+        </ul>
+        <button type="button">Contact our expert</button>
+      </section>
+      <!-- #endregion Staff <!--? Staff -->
+      <!-- #region News <!--! News -->
+      <section class="news container">
+        <h2>Contents Strategies</h2>
+        <p>
+          We focus on ergonomics and meeting you where you work. It's only a
+          keystroke away.
+        </p>
+      </section>
+      <!-- #endregion News <!--? News -->
+      <!-- #region Pricing <!--! Pricing -->
+      <section class="pricing container">
+        <h2>Price Table</h2>
+        <p>We offer competitive price</p>
+        <ul class="price-list">
+          <li>
+            <h3>Free</h3>
+            <p>Brief price description</p>
+            <h4>0$ Per / month</h4>
+            <ul>
+              <li>Only 2 Operators</li>
+              <li>Notifications</li>
+              <li>Landing Pages</li>
+            </ul>
+            <button type="button">Order Now</button>
+          </li>
+          <li>
+            <h3>Standard</h3>
+
+            <p>Brief price description</p>
+            <h4>5$ Per / month</h4>
+            <ul>
+              <li>5+ Operators</li>
+              <li>10+ Operators</li>
+              <li>Notifications</li>
+            </ul>
+            <button type="button">Order Now</button>
+          </li>
+          <li>
+            <h3>Premium</h3>
+
+            <p>Brief price description</p>
+            <h4>10$ Per / month</h4>
+            <ul>
+              <li>Notifications</li>
+              <li>Landing Pages</li>
+              <li>Landing Pages</li>
+            </ul>
+            <button type="button">Order Now</button>
+          </li>
+        </ul>
+      </section>
+      <!-- #endregion Pricing <!--? Pricing -->
+      <!-- #region Feedback <!--! Feedback -->
+      <section class="feedback container"></section>
+      <!-- #endregion Feedback <!--? Feedback -->
+      <!-- #region Promo <!--! Promo -->
+      <section class="promo container"></section>
+      <!-- #endregion Promo <!--? Promo -->
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-conteiner container">
+        <div class="footer-social">
+          <a href="./index.html">
+            <img src="./images/logo.svg" alt="logo" width="40" height="36" />
+            Product
+          </a>
+          <ul class="footer-social-link">
+            <li>
+              <a href="" target="_blank"
+                ><img src="./images/item-1.svg" alt="1"
+              /></a>
+            </li>
+            <li>
+              <a href="" target="_blank"
+                ><img src="./images/item-2.svg" alt="2"
+              /></a>
+            </li>
+            <li>
+              <a href="" target="_blank"
+                ><img src="./images/item-3.svg" alt="3"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer-nav">
+          <p>Resource</p>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+        <ul class="footer-nav">
+          <p>Legal Stuff</p>
+          <li><a href="">Disclaimer</a></li>
+          <li><a href="">Financing</a></li>
+          <li><a href="">Privacy Policy</a></li>
+        </ul>
+        <ul>
+          <p>knowing you're always on the best energy deal.</p>
+          <li><button type="submit">Sign up Now</button></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
